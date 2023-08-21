@@ -1,10 +1,13 @@
 import Layout from "../../Layout/Layout";
+import TargetLavelcod from "../../components/Targetlavelcod/TargetLavelcod";
 
 const Home = () => {
     return (
         <Layout>
             <div>
-                home
+                <div>
+                    <TargetLavelcod></TargetLavelcod>
+                </div>
             </div>
         </Layout>
     );
