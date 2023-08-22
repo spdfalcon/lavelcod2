@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function TargetLavelcod() {
+  const [md , setMd]=useState(false)
+  useEffect(() => {
+    window.addEventListener('resize',()=>{
+      console.log(window.innerWidth);
+      window.innerWidth > 768 ? setMd(true) : setMd(false)
+    })
+  }, []);
   return (
     <div className="md:px-5">
       <div className="bg-zinc-100 flex flex-col md:flex-row gap-2 rounded-3xl">
@@ -38,11 +45,19 @@ export default function TargetLavelcod() {
               لاول کد چه کار هایی انجام میدهد؟
             </h2>
             <div className="flex justify-center mt-2">
-              <img
+              {!md ? (
+                <img
+                  className="w-28"
+                  src="./images/targetLavelcod/underlineblack.png"
+                  alt=""
+                />
+              ) : (
+                <img
                 className="w-28"
-                src="./images/targetLavelcod/underlineblack.png"
+                src="./images/targetLavelcod/underlinewhite.png"
                 alt=""
               />
+              )}
             </div>
           </div>
           <div className="grid gap-3 grid-cols-1 md:grid-cols-2">
