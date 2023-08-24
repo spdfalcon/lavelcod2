@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export default function TargetLavelcod() {
-  const [md , setMd]=useState(false)
+  const [md , setMd]=useState(window.innerWidth > 768 ? true : false)
   useEffect(() => {
     window.addEventListener('resize',()=>{
       console.log(window.innerWidth);
