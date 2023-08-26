@@ -75,7 +75,7 @@ export default function BigCustomers() {
           </div>
         </div>
       ) : (
-        ""
+        " "
       )}
     </>
   );
