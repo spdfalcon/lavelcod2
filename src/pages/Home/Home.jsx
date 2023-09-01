@@ -1,23 +1,45 @@
+import { useEffect, useState } from "react";
 import Layout from "../../Layout/Layout";
 import AttributesLavelcod from "../../components/AttributesLavelcod/AttributesLavelcod";
 import BigCustomers from "../../components/BigCustomers/BigCustomers";
 import TargetLavelcod from "../../components/TargetLavelcod/TargetLavelcod";
 const Home = () => {
-    return (
-        <Layout>
+  const [md, setMd] = useState(window.innerWidth > 768 ? true : false);
+  useEffect(() => {
+    console.log(navigator.userAgent);
+    window.addEventListener("resize", () => {
+      console.log(window.innerWidth);
+      window.innerWidth > 768 ? setMd(true) : setMd(false);
+    });
+  }, []);
+  return (
+    <Layout>
+      <div>
+        <div>
+          <TargetLavelcod></TargetLavelcod>
+        </div>
+        {md ? (
+          <>
             <div>
-                <div>
-                    <TargetLavelcod></TargetLavelcod>
-                </div>
-                <div>
-                    <BigCustomers></BigCustomers>
-                </div>
-                <div>
-                    <AttributesLavelcod></AttributesLavelcod>
-                </div>
+              <AttributesLavelcod></AttributesLavelcod>
             </div>
-        </Layout>
-    );
-}
+            <div>
+              <BigCustomers></BigCustomers>
+            </div>
+          </>
+        ) : (
+          <>
+            <div>
+              <BigCustomers></BigCustomers>
+            </div>
+            <div>
+              <AttributesLavelcod></AttributesLavelcod>
+            </div>
+          </>
+        )}
+      </div>
+    </Layout>
+  );
+};
 
 export default Home;
