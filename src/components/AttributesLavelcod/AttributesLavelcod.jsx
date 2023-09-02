@@ -11,7 +11,7 @@ export default function AttributesLavelcod() {
   }, []);
   return (
     <div>
-      <div className="px-[61px] py-7 flex flex-col items-center">
+      <div className="px-[61px] py-7 flex flex-col items-center bg-bg-body">
         <div className="top">
           {md ? (
             <div>

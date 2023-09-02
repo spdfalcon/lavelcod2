@@ -3,6 +3,7 @@ import Layout from "../../Layout/Layout";
 import AttributesLavelcod from "../../components/AttributesLavelcod/AttributesLavelcod";
 import BigCustomers from "../../components/BigCustomers/BigCustomers";
 import TargetLavelcod from "../../components/TargetLavelcod/TargetLavelcod";
+import Comments from "../../components/Comments/Comments";
 const Home = () => {
   const [md, setMd] = useState(window.innerWidth > 768 ? true : false);
   useEffect(() => {
@@ -34,6 +35,9 @@ const Home = () => {
             </div>
             <div>
               <AttributesLavelcod></AttributesLavelcod>
+            </div>
+            <div>
+              <Comments></Comments>
             </div>
           </>
         )}
