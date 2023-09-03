@@ -4,6 +4,7 @@ import AttributesLavelcod from "../../components/AttributesLavelcod/AttributesLa
 import BigCustomers from "../../components/BigCustomers/BigCustomers";
 import TargetLavelcod from "../../components/TargetLavelcod/TargetLavelcod";
 import Comments from "../../components/Comments/Comments";
+import CommentsMd from "../../components/CommentsMd/CommentsMd";
 const Home = () => {
   const [md, setMd] = useState(window.innerWidth > 768 ? true : false);
   useEffect(() => {
@@ -27,16 +28,19 @@ const Home = () => {
             <div>
               <BigCustomers></BigCustomers>
             </div>
+            <div>
+              <CommentsMd></CommentsMd>
+            </div>
           </>
         ) : (
           <>
             <div>
               <BigCustomers></BigCustomers>
             </div>
-            <div>
+            <div className="">
               <AttributesLavelcod></AttributesLavelcod>
             </div>
-            <div>
+            <div className="">
               <Comments></Comments>
             </div>
           </>

@@ -11,7 +11,7 @@ export default function AttributesLavelcod() {
   }, []);
   return (
     <div>
-      <div className="px-[61px] py-7 flex flex-col items-center bg-bg-body">
+      <div className={`px-[61px] py-7 flex flex-col items-center ${!md && `bg-bg-body`}`} >
         <div className="top">
           {md ? (
             <div>
@@ -22,7 +22,7 @@ export default function AttributesLavelcod() {
               </div>
             </div>
           ) : (
-            <div>
+            <div className="">
               <div className="sun relative">
                 <span className="block w-1 h-[17px] bg-gradient-to-t from-[#F7936F] to-[#FFEF5E] rounded-xl"></span>
                 <span className="absolute rotate-45 left-4 top-1 block w-1 h-[17px] bg-gradient-to-t from-[#F7936F] to-[#FFEF5E] rounded-xl"></span>

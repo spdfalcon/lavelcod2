@@ -14,7 +14,7 @@ export default function Comments() {
   }, []);
   return (
     <>
-      <div className="mt-10 px-6 text-main-text-dark">
+      <div className="mt-10 px-6 text-main-text-dark relative overflow-x-hidden">
         <div className="flex justify-between items-center ">
           <img
             className="w-[26px] h-[19px]"
