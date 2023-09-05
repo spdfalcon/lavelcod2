@@ -48,7 +48,7 @@ export default function CommentsMd() {
         </div>
       </div>
 
-      <div>
+      <div className="mt-5">
       <Swiper
           spaceBetween={30}
           pagination={{

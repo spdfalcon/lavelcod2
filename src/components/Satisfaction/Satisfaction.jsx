@@ -16,7 +16,7 @@ export default function Satisfaction() {
 
             <div className="b l flex flex-col gap-4 md:basis-1/2">
                 <div className="flex justify-between">
-                    <div className="r basis-1/2 md:text-start text-base md:text-[26px]">
+                    <div className="r basis-1/2 md:text-start text-base font-normal md:text-[26px]">
                         <h3>97.5 درصد</h3>
                     </div>
                     <div className="l basis-1/2  border-b border-main-text-white font-dana-font pb-2">
@@ -24,7 +24,7 @@ export default function Satisfaction() {
                     </div>
                 </div>
                 <div className="flex justify-between">
-                    <div className="r basis-1/2 md:text-start text-base md:text-[26px]">
+                    <div className="r basis-1/2 md:text-start text-base font-normal md:text-[26px]">
                         <h3>+3000</h3>
                     </div>
                     <div className="l basis-1/2  border-b border-main-text-white font-dana-font pb-2">
@@ -32,7 +32,7 @@ export default function Satisfaction() {
                     </div>
                 </div>
                 <div className="flex justify-between">
-                    <div className="r basis-1/2 md:text-start text-base md:text-[26px]">
+                    <div className="r basis-1/2 md:text-start text-base font-normal md:text-[26px]">
                         <h3>+50000</h3>
                     </div>
                     <div className="l basis-1/2  border-b border-main-text-white font-dana-font pb-2">
