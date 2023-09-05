@@ -5,6 +5,7 @@ import BigCustomers from "../../components/BigCustomers/BigCustomers";
 import TargetLavelcod from "../../components/TargetLavelcod/TargetLavelcod";
 import Comments from "../../components/Comments/Comments";
 import CommentsMd from "../../components/CommentsMd/CommentsMd";
+import Satisfaction from "../../components/Satisfaction/Satisfaction";
 const Home = () => {
   const [md, setMd] = useState(window.innerWidth > 768 ? true : false);
   useEffect(() => {
@@ -45,6 +46,7 @@ const Home = () => {
             </div>
           </>
         )}
+        <Satisfaction></Satisfaction>
       </div>
     </Layout>
   );

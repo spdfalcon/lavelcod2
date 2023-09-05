@@ -1,8 +1,11 @@
 import React from "react";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 export default function CommentsMd() {
   return (
-    <div className="px-[121px] py-28 grid grid-cols-5 gap-3">
+    <div className="px-14 py-20 my-2 grid grid-cols-5">
       <div className="col-span-2 flex flex-col items-start">
         <h2 className="font-ray-font font-bold text-[28px]">
           نظرات واقعی از کاربران واقعی
@@ -45,7 +48,53 @@ export default function CommentsMd() {
         </div>
       </div>
 
-      <div></div>
+      <div>
+      <Swiper
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="flex flex-col items-center gap-5 h-full mx-4 px-2 py-2 my-2 font-bold rounded-xl border-2 shadow-xl">
+              <div>
+                <img className="" src="./images/CommentsMd/6.png/" alt="" />
+              </div>
+              <div className="font-dana-font text-[16px]"><h3>علیرضا رحمانی</h3></div>
+              <div className="text-xs font-dana-font text-main-text-dark"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center gap-5 h-full mx-4 px-2 py-2 my-2 font-bold rounded-xl border-2 shadow-xl">
+              <div>
+                <img className="" src="./images/CommentsMd/6.png/" alt="" />
+              </div>
+              <div className="font-dana-font text-[16px]"><h3>علیرضا رحمانی</h3></div>
+              <div className="text-xs font-dana-font text-main-text-dark"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center gap-5 h-full mx-4 px-2 py-2 my-2 font-bold rounded-xl border-2 shadow-xl">
+              <div>
+                <img className="" src="./images/CommentsMd/6.png/" alt="" />
+              </div>
+              <div className="font-dana-font text-[16px]"><h3>علیرضا رحمانی</h3></div>
+              <div className="text-xs font-dana-font text-main-text-dark"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center gap-5 h-full mx-4 px-2 py-2 my-2 font-bold rounded-xl border-2 shadow-xl">
+              <div>
+                <img className="" src="./images/CommentsMd/6.png/" alt="" />
+              </div>
+              <div className="font-dana-font text-[16px]"><h3>علیرضا رحمانی</h3></div>
+              <div className="text-xs font-dana-font text-main-text-dark"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p></div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
 
       <div className="relative">
         <div className="absolute left-0 top-60">
