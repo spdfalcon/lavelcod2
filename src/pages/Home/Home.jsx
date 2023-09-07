@@ -6,6 +6,7 @@ import TargetLavelcod from "../../components/TargetLavelcod/TargetLavelcod";
 import Comments from "../../components/Comments/Comments";
 import CommentsMd from "../../components/CommentsMd/CommentsMd";
 import Satisfaction from "../../components/Satisfaction/Satisfaction";
+import LatestNews from "../../components/LatestNews/LatestNews";
 const Home = () => {
   const [md, setMd] = useState(window.innerWidth > 768 ? true : false);
   useEffect(() => {
@@ -46,7 +47,12 @@ const Home = () => {
             </div>
           </>
         )}
+        <div>
         <Satisfaction></Satisfaction>
+        </div>
+        <div>
+          <LatestNews></LatestNews>
+        </div>
       </div>
     </Layout>
   );
