@@ -13,13 +13,13 @@ export default function LatestNews() {
     <>
       <div className="parent px-6 pt-7">
         <div className="title text-main-text-dark text-center font-bold">
-          <h2 className="text-[18px] font-ray-font">آخرین اخبار و مقالات</h2>
-          <h4 className="font-dana-font text-xs ">
+          <h2 className="text-[18px] font-ray-font md:text-2xl">آخرین اخبار و مقالات</h2>
+          <h4 className="font-dana-font text-xs md:text-[16px]">
             در بلاگ لاول کد شما به آرشیو اخبار در مورد دنیای سایت و تکنولوژی
             دسترسی خواهید داشت.
           </h4>
-          <div className="flex justify-center mt-1">
-            <img src="./images/targetLavelcod/underlineblack.png" alt="" />
+          <div className="flex justify-center mt-1 md:mt-3">
+            <img className="md:w-[88px]" src="./images/targetLavelcod/underlineblack.png" alt="" />
           </div>
 
           {/* slider */}
@@ -166,8 +166,8 @@ export default function LatestNews() {
           </Swiper>
 
           {/* slider */}
-          <div>
-            <a href="#" className="w-full h-10 flex justify-center items-center gap-2 bg-[#00886B]  rounded-lg text-main-text-white">
+          <div className="flex justify-center">
+            <a href="#" className="w-full h-10 flex justify-center items-center gap-2 bg-[#00886B]  rounded-lg text-main-text-white md:w-36 md:h-16">
               <p className="text-xs font-dana-font">رفتن به بلاگ</p>
               <BsArrowLeft></BsArrowLeft>
             </a>

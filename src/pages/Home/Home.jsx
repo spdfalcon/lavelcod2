@@ -7,6 +7,7 @@ import Comments from "../../components/Comments/Comments";
 import CommentsMd from "../../components/CommentsMd/CommentsMd";
 import Satisfaction from "../../components/Satisfaction/Satisfaction";
 import LatestNews from "../../components/LatestNews/LatestNews";
+import Questions from "../../components/Questions/Questions";
 const Home = () => {
   const [md, setMd] = useState(window.innerWidth > 768 ? true : false);
   useEffect(() => {
@@ -52,6 +53,9 @@ const Home = () => {
         </div>
         <div>
           <LatestNews></LatestNews>
+        </div>
+        <div>
+          <Questions></Questions>
         </div>
       </div>
     </Layout>
