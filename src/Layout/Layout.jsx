@@ -1,6 +1,7 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { useEffect, useState } from "react";
+import FooterMd from "../components/FooterMd/FooterMd";
 
 const Layout = ({ children }) => {
   const [md, setMd] = useState(window.innerWidth > 768 ? true : false);
@@ -15,7 +16,13 @@ const Layout = ({ children }) => {
     <div>
       <Header />
       <section className="">{children}</section>
-      <Footer />
+      {
+        md ? (
+          <FooterMd></FooterMd>
+          ):(
+            <Footer />
+        )
+      }
     </div>
   );
 };
