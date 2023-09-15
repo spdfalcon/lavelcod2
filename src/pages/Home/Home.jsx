@@ -50,6 +50,7 @@ const Home = () => {
             <div className="">
               <Comments></Comments>
             </div>
+            
           </>
         )}
         <div>
