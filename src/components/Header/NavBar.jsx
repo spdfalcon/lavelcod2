@@ -27,7 +27,7 @@ const NavBar = () => {
             {/*------------------ phone size ----------------------------*/}
             <div className="w-full h-20 fixed top-0 right-0  px-6 flex justify-between items-center md:hidden bg-white z-50">
                 <div className="flex gap-2">
-                    <img src="/images/header/Group 2111.png" alt="logo" className="w-11 h-11 object-cover p-2 bg-white rounded-lg shadow-lg" />
+                    <img src="./images/header/Group 2111.png" alt="logo" className="w-11 h-11 object-cover p-2 bg-white rounded-lg shadow-lg" />
                     <div className="flex flex-col text-sm text-logo-blue">
                         <strong>LavelCode</strong>
                         <span>لاول کد</span>
