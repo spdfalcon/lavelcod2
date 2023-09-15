@@ -8,6 +8,7 @@ import CommentsMd from "../../components/CommentsMd/CommentsMd";
 import Satisfaction from "../../components/Satisfaction/Satisfaction";
 import LatestNews from "../../components/LatestNews/LatestNews";
 import Questions from "../../components/Questions/Questions";
+import Portfolio from "../../components/Protfolio/Protfolio";
 const Home = () => {
   const [md, setMd] = useState(window.innerWidth > 768 ? true : false);
   useEffect(() => {
@@ -19,6 +20,9 @@ const Home = () => {
   }, []);
   return (
     <Layout>
+      <div>
+        <Portfolio></Portfolio>
+      </div>
       <div>
         <div>
           <TargetLavelcod></TargetLavelcod>
