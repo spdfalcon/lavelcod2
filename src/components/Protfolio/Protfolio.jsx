@@ -3,7 +3,7 @@ import { BsArrowLeft } from "react-icons/bs";
 const Portfolio = () => {
     return (
         <div className="w-full h-auto flex flex-col  justify-center items-center md:-translate-y-28 relative">
-            <img src="../../../public/images/header/1.svg" alt='portoSvg' className="hidden md:flex w-[83vw]" />
+            <img src="http://my.uupload.ir/dl/yoOwOGnk" alt='portoSvg' className="hidden md:flex w-[83vw]" />
             <div className="md:w-[70vw] w-full md:absolute md:top-5 flex flex-col items-center gap-2">
                 <span className="font-ray-font text-xl mb-3 md:text-2xl">نمونه کار های طراحی شده توسط تیم لاول کد</span>
                 <span className="font-dana-font text-xl hidden md:flex">امروزه اگر کسب و کاری دارید، برای ماندن در بازار و رقابت با دیگران باید یک وب سایت و اپلیکیشن حرفه‌ای داشته باشید. تیم لاول کد با راه
